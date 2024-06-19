@@ -67,6 +67,11 @@ impl VirtualMemory {
         }
         panic!("Unmapped address: 0x{address:04X}");
     }
+
+    pub fn free(&mut self, pointer: &mut Pointer) {
+        self.deallocate(pointer.address);
+        pointer.size = 0;
+    }
 }
 
 impl Display for VirtualMemory {

@@ -5,8 +5,8 @@ use crate::{access_memory, mem::{Memory, MemorySliceTrait}};
 #[derive(Debug)]
 pub struct Pointer {
     memory: Memory,
-    address: usize,
-    size: usize,
+    pub address: usize,
+    pub size: usize,
 }
 
 impl Pointer {
