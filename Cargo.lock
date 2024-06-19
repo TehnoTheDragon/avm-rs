@@ -5,6 +5,9 @@ version = 3
 [[package]]
 name = "avm-rs"
 version = "0.1.0"
+dependencies = [
+ "avm_rs_memory",
+]
 
 [[package]]
 name = "avm_rs_memory"

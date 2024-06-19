@@ -3,5 +3,8 @@ name = "avm-rs"
 version = "0.1.0"
 edition = "2021"
 
+[dependencies]
+avm_rs_memory = { path = "avm_rs_memory" }
+
 [workspace]
 members = ["avm_rs_memory"]
