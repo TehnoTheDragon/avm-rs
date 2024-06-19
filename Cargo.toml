@@ -1,0 +1,7 @@
+[package]
+name = "avm-rs"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+members = ["avm_rs_memory"]
