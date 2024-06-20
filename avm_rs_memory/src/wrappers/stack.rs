@@ -32,6 +32,17 @@ impl Stack {
         }
     }
 
+    pub fn reset(&mut self) {
+        self.top = 0;
+    }
+
+    pub fn set_top(&mut self, top: usize) {
+        if self.top > self.pointer.size {
+            panic!("Stack overflow");
+        }
+        self.top = top;
+    }
+
     impl_stack_push!(u8, push_u8, write_u8, 1);
     impl_stack_pop!(u8, pop_u8, read_u8, 1);
 
