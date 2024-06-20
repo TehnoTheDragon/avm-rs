@@ -5,6 +5,10 @@ edition = "2021"
 
 [dependencies]
 avm_rs_memory = { path = "avm_rs_memory" }
+avm_rs_component = { path = "avm_rs_component" }
 
 [workspace]
-members = ["avm_rs_memory"]
+members = [
+    "avm_rs_component",
+    "avm_rs_memory"
+]
